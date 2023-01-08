@@ -1,0 +1,38 @@
+.form {
+    width: 400px;
+    border-radius: 20px;
+}
+
+.heading {
+    font-size: .9rem;
+}
+
+@media screen and (max-width: 540px) {
+    .form {
+        width: 360px;
+        border-radius: 8px;
+    }
+
+    .heading {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .form {
+        border-radius: 4px;
+        width: 320px;
+    }
+    .heading{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .form {
+        width: 270px;
+    }
+    .heading{
+        font-size: .5rem;
+    }
+}
