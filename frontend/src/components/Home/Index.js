@@ -202,7 +202,7 @@ function Home() {
                       <ul
                         key={t._id}
                         style={{
-                          backgroundColor: "#F8B6A0",
+                          backgroundColor: "#FFB899",
                           borderRadius: "20px",
                           padding: "20px 20px",
                           listStyle: "none",

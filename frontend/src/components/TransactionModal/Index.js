@@ -75,7 +75,11 @@ function TransationModal({ isOpenTransationFrom, onClose, userEmail }) {
       <form
         id="form"
         className="form"
-        style={{ display: "flex", flexDirection: "column" }}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+        }}
         onSubmit={(e) => handleSubmit(e)}
       >
         <FormLabel sx={{ margin: "10px auto" }}>Transaction Details</FormLabel>
@@ -98,7 +102,13 @@ function TransationModal({ isOpenTransationFrom, onClose, userEmail }) {
         </FormControl>
 
         <FormControl sx={{ margin: "10px auto" }} fullWidth>
-          <TextField type="number" variant="standard" name="amount" required />
+          <TextField
+            type="number"
+            variant="standard"
+            name="amount"
+            label="Total Amount"
+            required
+          />
         </FormControl>
 
         <FormControl sx={{ margin: "10px auto" }} fullWidth>
@@ -110,9 +120,16 @@ function TransationModal({ isOpenTransationFrom, onClose, userEmail }) {
         </FormControl>
 
         <FormControl sx={{ margin: "10px auto" }} fullWidth>
-          <TextField type="number" name="people" required />
+          <TextField
+            type="number"
+            name="people"
+            label="Total People"
+            required
+          />
         </FormControl>
-        <Button type="submit"> Submit </Button>
+        <FormControl>
+          <Button type="submit"> Submit </Button>
+        </FormControl>
       </form>
     </div>
   );

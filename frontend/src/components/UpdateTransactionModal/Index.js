@@ -59,6 +59,8 @@ function UpadateModal({ openForm, closeForm, item }) {
         zIndex: "10000",
         padding: "30px 20px",
         borderRadius: "20px",
+        backgroundColor: "#F27C54",
+        border: "2px solid black"
       }}
     >
       <Button
@@ -129,7 +131,7 @@ function UpadateModal({ openForm, closeForm, item }) {
             <option>Lender</option>
           </NativeSelect>
         </FormControl>
-        <FormControl sx={{ margin: "6px auto" }}>
+        <FormControl sx={{ margin: "6px auto", fontSize: "1.1rem" }}>
           <Button type="submit">
             Submit <BackupTwoToneIcon />{" "}
           </Button>
