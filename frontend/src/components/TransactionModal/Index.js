@@ -43,7 +43,7 @@ function TransationModal({ isOpenTransationFrom, onClose, userEmail }) {
       })
       .then((res) => {
         if (res.status === 201) {
-          onClose();
+          window.location.reload();
         }
       })
       .catch((err) => console.log("Error Posting transaction", err));

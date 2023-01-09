@@ -242,7 +242,10 @@ function Home() {
                         >
                           <span>
                             <Button
-                              onClick={() => DeleteTransaction(transaction._id)}
+                              onClick={() => {
+                                DeleteTransaction(transaction._id);
+                                window.location.reload(true);
+                              }}
                             >
                               <DeleteOutlineIcon />
                             </Button>

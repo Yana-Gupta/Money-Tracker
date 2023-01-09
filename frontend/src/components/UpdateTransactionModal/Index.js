@@ -10,7 +10,6 @@ import React from "react";
 import axios from "axios";
 import CloseIcon from "@mui/icons-material/Close";
 import BackupTwoToneIcon from "@mui/icons-material/BackupTwoTone";
-import { useNavigate } from "react-router-dom";
 
 const URL = "http://localhost:4000/";
 
@@ -25,7 +24,6 @@ const TransactionType = [
 ];
 
 function UpadateModal({ openForm, closeForm, item }) {
-  const navigate = useNavigate();
   if (!openForm) {
     return null;
   }
@@ -43,7 +41,7 @@ function UpadateModal({ openForm, closeForm, item }) {
       })
       .then((res) => {
         if (res.status === 200) {
-          closeForm();
+          window.location.reload(true);
         }
       })
       .catch((err) => console.log("Error Updating Transaction", err));
